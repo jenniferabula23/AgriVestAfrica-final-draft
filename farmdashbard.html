@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agrivest Africa</title>
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet"
+    href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/compiled-4.20.0.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <meta charset="utf-8">
+  <meta name="description" content="
+  Sign Up with Agrivest Africa for the opportunity to invest in new farms, manage and monitor old farms. " />
+  <meta name="keywords" content=" Agrivest Africa, Grow, growth, farm, sponsorship, sponsor, sponsoring, invest, investing, farming,
+  crop, africa, ghana, nigeria, india, agriculture, green technology " />
+  <meta name="subject" content="Agrivest Africa">
+  <meta name="copyright" content="Agrivest Africa">
+  <link rel="shortcut icon" href="img/cocoa-pods-with-cocoa-leaf-white_41471-6709.webp" />
+
+
+  
+
+  <link rel="stylesheet" href="user dashboard/assets/css/main.css">
+  <style>
+    body {
+      background-color: #f5f5f5;
+    }
+
+    .imagePreview {
+      width: 100%;
+      height: 180px;
+      background-position: center center;
+      background: url(http://cliquecities.com/assets/no-image-e3699ae23f866f6cbdf8ba2443ee5c4e.jpg);
+      background-color: #fff;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: inline-block;
+      box-shadow: 0px -3px 6px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-primary {
+      display: block;
+      border-radius: 0px;
+      box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 0.2);
+      margin-top: -5px;
+    }
+
+    .imgUp {
+      margin-bottom: 15px;
+    }
+
+    .del {
+      position: absolute;
+      top: 0px;
+      right: 15px;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      background-color: rgba(255, 255, 255, 0.6);
+      cursor: pointer;
+    }
+
+    .imgAdd {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #4bd7ef;
+      color: #fff;
+      box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      line-height: 30px;
+      margin-top: 0px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    .rgba-gradient1 {
+      background: -moz-linear-gradient(45deg, rgba(57, 221, 16, 0.7), rgba(19, 77, 5, 0.7) 60%);
+      background: -webkit-linear-gradient(45deg, rgba(14, 233, 25, 0.7), rgba(3, 46, 3, 0.7) 40%);
+      background: -webkit-gradient(linear, 45deg, from(rgba(7, 226, 36, 0.7)), to(rgba(103, 224, 87, 0.5)));
+      background: -o-linear-gradient(45deg, rgba(60, 230, 8, 0.2), rgba(20, 85, 3, 0.7) 50%);
+      background: linear-gradient(to 45deg, rgba(57, 238, 11, 0.7), rgba(9, 61, 4, 0.7) 20%);
+    }
+
+    .chartbox {
+      height: 300px;
+      width: 300px;
+    }
+
+    .edit {
+      margin-bottom: 3rem;
+    }
+  </style>
+</head>
+
+
+<body>
+  <div class="dashboard-pg text-grey-blue">
+    <nav class="navigation-bar d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="navigation-bar-left col-6 d-flex align-items-center">
+            <button type="button" class="navbar-open-btn text-grey-blue me-3">
+              <i class="fas fa-bars"></i>
+            </button>
+
+          </div>
+
+          <div class="navigation-bar-right col-6 d-flex align-items-center justify-content-end">
+            <a href="#" class="profile-btn bg-blue  btn-circle me-3">
+              <i class="fas fa-user"></i>
+            </a>
+            <button type="button" class="notification-btn text-grey-blue">
+              <i class="fa-regular fa-bell"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="navigation-overlay position-fixed"></div>
+
+    <div class="navigation-sidebar">
+      <div class="navbar-sb-head d-flex justify-content-between align-items-center px-4">
+        <h3 class="font-weight-bold"><a href="index.html">Agrivest Africa</a></h3>
+        <button class="navbar-close-btn text-grey-blue">
+          <i class='fas fa-arrow-left'></i>
+        </button>
+      </div>
+
+      <div class="navbar-sb-list p-4">
+        <div class="navbar-sb-item mb-5">
+          <h5 class="text-uppercase text-grey navbar-sb-item-title fs-12 ls-1"></h5>
+          <ul class="navbar-sb-links p-0 list-unstyled">
+            <li class="navbar-sb-link my-3">
+              <a href="#" class="text-decoration-none d-flex align-items-center justify-content-between">
+                <div class="text-light-blue d-flex align-items-center">
+                  <span class="navbar-sb-text green-text"><a href="profile1.html">Profile</a></span>
+                </div>
+              </a>
+            </li>
+
+            <li class="navbar-sb-link my-3">
+              <a href="#" class="text-decoration-none d-flex align-items-center justify-content-between">
+                <div class="text-light-blue d-flex align-items-center">
+                  <span class="navbar-sb-text green-text"><a href="transactions.html">Transactions</a></span>
+                </div>
+              </a>
+            </li>
+            <hr>
+            <li class="navbar-sb-link my-3">
+              <a href="#" class="text-decoration-none d-flex align-items-center justify-content-between">
+                <div class="text-light-blue d-flex align-items-center">
+                  <span class="navbar-sb-text green-text"><a href="farmdashbard.html">Farm</a></span>
+                </div>
+              </a>
+            </li>
+            <li class="navbar-sb-link my-3">
+              <a href="#" class="text-decoration-none d-flex align-items-center justify-content-between">
+                <div class="text-light-blue d-flex align-items-center">
+                  <span class="navbar-sb-text green-text"><a href="">Trade</a></span>
+                </div>
+              </a>
+            </li>
+            <li class="navbar-sb-link my-3">
+              <a href="#" class="text-decoration-none d-flex align-items-center justify-content-between">
+                <div class="text-light-blue d-flex align-items-center">
+                  <span class="navbar-sb-text green-text"><a href="">Market</a></span>
+                </div>
+              </a>
+            </li>
+
+            <hr>
+            <li class="navbar-sb-link my-3">
+              <a href="#" class="text-decoration-none d-flex align-items-center justify-content-between">
+                <div class="text-light-blue d-flex align-items-center">
+                  <span class="navbar-sb-text green-text"><a href="produce.html">My Produce</a></span>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <hr>
+        <div class="navbar-sb-item mb-5">
+          <ul class="navbar-sb-links p-0 list-unstyled">
+            <li class="navbar-sb-link my-3">
+              <a href="#" class="text-decoration-none d-flex align-items-center justify-content-between">
+                <div class="text-light-blue d-flex align-items-center">
+                  <span class="navbar-sb-text fs-14 fw-5 text-capitalize">logout</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="dashboard-main">
+      <div class="container">
+        <div class="row py-3">
+          <div class="col-12 d-flex justify-content-between align-items-center">
+            <div class="dashboard-title-text">
+              <h2 class="font-weight-bold green-text">Agrivest Africa Dashboard</h2>
+              <p class="text-grey">Support farmers today</p>
+            </div>
+            <button type="button" class="fs-18 text-grey-blue">
+              <i class="fas fa-ellipsis-vertical"></i>
+            </button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <br>
+  </div>
+
+
+  <div class="container my-5">
+    <!-- Section: Block Content -->
+    <section>
+      <div class="tabs-wrapper">
+        <!-- Nav tabs -->
+        <ul class="nav md-tabs nav-justified grey lighten-3 mx-0" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active dark-grey-text font-weight-bold" data-toggle="tab" href="#panel36"
+              role="tab"><span style="color: red;font-weight: bold;">Pending</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dark-grey-text font-weight-bold" data-toggle="tab" href="#panel37" role="tab"><span
+                style="color: blue;font-weight: bold;">Active</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dark-grey-text font-weight-bold" data-toggle="tab" href="#panel38" role="tab"><span
+                style="color: green;font-weight: bold;">Completed</span></a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Tab panels -->
+      <div class="tab-content px-0 pt-5">
+        <!-- Panel 1 -->
+        <div class="tab-pane fade in show active" id="panel36" role="tabpanel">
+          <!-- Grid row -->
+          <div class="row">
+
+            <div class="col-lg-3 col-md-6 mb-4 edit">
+              <small>
+                <div class="card-wrapper z-depth-4">
+                  <div id="card-1" class="card card-rotating text-center">
+
+                    <!-- Front Side -->
+                    <div class="face front">
+
+                      <!-- Image-->
+                      <div class="card-up">
+                        <img class="card-img-top" src="img/corn-isolated_93675-33173.webp"
+                          alt="Image with a photo of clouds.">
+                      </div>
+                      <!-- Content -->
+                      <div class="card-body">
+                        <h4 class="card-title font-weight-bold mb-4 green-text ">Maize </h4>
+                        <span class="badge badge-success mb-2">9 months</span>
+                        <span class="badge badge-success mb-2">10th June-20th August</span>
+                        <dl class="row">
+                          <dd class="col-sm-6">
+                            Cost Per Unit
+                          </dd>
+                          <dd class="col-sm-6 green-text">
+                            GH₵ 2000
+                          </dd>
+                        </dl>
+
+                        <hr>
+
+                        <dl class="row">
+                          <dd class="col-sm-6">
+                            Profit Margin
+                          </dd>
+                          <dd class="col-sm-6 green-text">
+                            12.5%-14.0%
+                          </dd>
+                        </dl>
+
+                        <hr>
+                        <div class="text-center">
+                          <button type="button" class="btn btn-rounded">
+                            <small>Proceed</small>
+                          </button>
+                        </div>
+                        <!-- Triggering button -->
+                        <a class="rotate-btn" data-card="card-1"><i class="fas fa-redo-alt"></i> Click here to read
+                          more</a>
+                      </div>
+                    </div>
+                    <!-- Front Side -->
+
+                    <!-- Back Side -->
+                    <div class="face back">
+                      <div class="card-body">
+                        <small>
+                          <h6 class="green-text">Details</h6>
+                        </small>
+                        <hr>
+                        <p>
+                          With proper farm culture, a typical maize farm yields 5 to 10 bags (100 kg per bag) of maize
+                          per
+                          acre.
+                          Undoubtedly, maize is the most important and most consumed cereal in Ghana and most African
+                          countries.
+                          Because of this, maize is grown throughout Ghana and other West African countries. Maize is
+                          not only
+                          the most widely grown cereal crop in Ghana but also plays a significant role in ensuring food
+                          security
+                          in the country. It is estimated that between 40 and 50% of the total food energy consumed by
+                          Ghanaians
+                          comes from maize and maize products. Additionally, maize is also used to feed poultry and
+                          other
+                          livestock. Sponsoring maize can yield a returns between 10% - 20%
+                        </p>
+                        <br>
+                        <a class="rotate-btn" data-card="card-1"><i class="fas fa-undo"></i> Click here to go back</a>
+                      </div>
+                    </div>
+                    <!-- Back Side -->
+
+                  </div>
+                </div>
+              </small>
+            </div>
+            <!-- Grid column -->
+            <div class="col-lg-3 col-md-6 mb-4 edit">
+              <small>
+                <div class="card-wrapper z-depth-4">
+                  <div id="card-2" class="card card-rotating text-center">
+
+                    <!-- Front Side -->
+                    <div class="face front">
+
+                      <!-- Image-->
+                      <div class="card-up">
+                        <img class="card-img-top" src="img/corn-isolated_93675-33173.webp"
+                          alt="Image with a photo of clouds.">
+                      </div>
+                      <!-- Content -->
+                      <div class="card-body">
+                        <h4 class="card-title font-weight-bold mb-4 green-text ">Maize </h4>
+                        <span class="badge badge-success mb-2">9 months</span>
+                        <span class="badge badge-success mb-2">10th June-20th August</span>
+                        <dl class="row">
+                          <dd class="col-sm-6">
+                            Cost Per Unit
+                          </dd>
+                          <dd class="col-sm-6 green-text">
+                            GH₵ 2000
+                          </dd>
+                        </dl>
+
+                        <hr>
+
+                        <dl class="row">
+                          <dd class="col-sm-6">
+                            Profit Margin
+                          </dd>
+                          <dd class="col-sm-6 green-text">
+                            12.5%-14.0%
+                          </dd>
+                        </dl>
+
+                        <hr>
+                        <div class="text-center">
+                          <button type="button" class="btn btn-rounded">
+                            <small>Proceed</small>
+                          </button>
+                        </div>
+                        <!-- Triggering button -->
+                        <a class="rotate-btn" data-card="card-1"><i class="fas fa-redo-alt"></i> Click here to read
+                          more</a>
+                      </div>
+                    </div>
+                    <!-- Front Side -->
+
+                    <!-- Back Side -->
+                    <div class="face back">
+                      <div class="card-body">
+                        <small>
+                          <h6 class="green-text">Details</h6>
+                        </small>
+                        <hr>
+                        <p>
+                          With proper farm culture, a typical maize farm yields 5 to 10 bags (100 kg per bag) of maize
+                          per
+                          acre.
+                          Undoubtedly, maize is the most important and most consumed cereal in Ghana and most African
+                          countries.
+                          Because of this, maize is grown throughout Ghana and other West African countries. Maize is
+                          not only
+                          the most widely grown cereal crop in Ghana but also plays a significant role in ensuring food
+                          security
+                          in the country. It is estimated that between 40 and 50% of the total food energy consumed by
+                          Ghanaians
+                          comes from maize and maize products. Additionally, maize is also used to feed poultry and
+                          other
+                          livestock. Sponsoring maize can yield a returns between 10% - 20%
+                        </p>
+                        <br>
+                        <a class="rotate-btn" data-card="card-2"><i class="fas fa-undo"></i> Click here to go back</a>
+                      </div>
+                    </div>
+                    <!-- Back Side -->
+
+                  </div>
+                </div>
+              </small>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <small>
+                <div class="card-wrapper z-depth-4">
+                  <div id="card-1" class="card card-rotating text-center">
+
+                    <!-- Front Side -->
+                    <div class="face front">
+
+                      <!-- Image-->
+                      <div class="card-up">
+                        <img class="card-img-top" src="img/corn-isolated_93675-33173.webp"
+                          alt="Image with a photo of clouds.">
+                      </div>
+                      <!-- Content -->
+                      <div class="card-body">
+                        <h4 class="card-title font-weight-bold mb-4 green-text ">Maize </h4>
+                        <span class="badge badge-success mb-2">9 months</span>
+                        <span class="badge badge-success mb-2">10th June-20th August</span>
+                        <dl class="row">
+                          <dd class="col-sm-6">
+                            Cost Per Unit
+                          </dd>
+                          <dd class="col-sm-6 green-text">
+                            GH₵ 2000
+                          </dd>
+                        </dl>
+
+                        <hr>
+
+                        <dl class="row">
+                          <dd class="col-sm-6">
+                            Profit Margin
+                          </dd>
+                          <dd class="col-sm-6 green-text">
+                            12.5%-14.0%
+                          </dd>
+                        </dl>
+
+                        <hr>
+                        <div class="text-center">
+                          <button type="button" class="btn btn-rounded">
+                            <small>Proceed</small>
+                          </button>
+                        </div>
+                        <!-- Triggering button -->
+                        <a class="rotate-btn" data-card="card-1"><i class="fas fa-redo-alt"></i> Click here to read
+                          more</a>
+                      </div>
+                    </div>
+                    <!-- Front Side -->
+
+                    <!-- Back Side -->
+                    <div class="face back">
+                      <div class="card-body">
+                        <small>
+                          <h6 class="green-text">Details</h6>
+                        </small>
+                        <hr>
+                        <p>
+                          With proper farm culture, a typical maize farm yields 5 to 10 bags (100 kg per bag) of maize
+                          per
+                          acre.
+                          Undoubtedly, maize is the most important and most consumed cereal in Ghana and most African
+                          countries.
+                          Because of this, maize is grown throughout Ghana and other West African countries. Maize is
+                          not only
+                          the most widely grown cereal crop in Ghana but also plays a significant role in ensuring food
+                          security
+                          in the country. It is estimated that between 40 and 50% of the total food energy consumed by
+                          Ghanaians
+                          comes from maize and maize products. Additionally, maize is also used to feed poultry and
+                          other
+                          livestock. Sponsoring maize can yield a returns between 10% - 20%
+                        </p>
+                        <br>
+                        <a class="rotate-btn" data-card="card-1"><i class="fas fa-undo"></i> Click here to go back</a>
+                      </div>
+                    </div>
+                    <!-- Back Side -->
+
+                  </div>
+                </div>
+              </small>
+            </div>
+            <!-- Grid column -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <small>
+                <div class="card-wrapper z-depth-4">
+                  <div id="card-1" class="card card-rotating text-center">
+
+                    <!-- Front Side -->
+                    <div class="face front">
+
+                      <!-- Image-->
+                      <div class="card-up">
+                        <img class="card-img-top" src="img/corn-isolated_93675-33173.webp"
+                          alt="Image with a photo of clouds.">
+                      </div>
+                      <!-- Content -->
+                      <div class="card-body">
+                        <h4 class="card-title font-weight-bold mb-4 green-text ">Maize </h4>
+                        <span class="badge badge-success mb-2">9 months</span>
+                        <span class="badge badge-success mb-2">10th June-20th August</span>
+                        <dl class="row">
+                          <dd class="col-sm-6">
+                            Cost Per Unit
+                          </dd>
+                          <dd class="col-sm-6 green-text">
+                            GH₵ 2000
+                          </dd>
+                        </dl>
+
+                        <hr>
+
+                        <dl class="row">
+                          <dd class="col-sm-6">
+                            Profit Margin
+                          </dd>
+                          <dd class="col-sm-6 green-text">
+                            12.5%-14.0%
+                          </dd>
+                        </dl>
+
+                        <hr>
+                        <div class="text-center">
+                          <button type="button" class="btn btn-rounded">
+                            <small>Proceed</small>
+                          </button>
+                        </div>
+                        <!-- Triggering button -->
+                        <a class="rotate-btn" data-card="card-1"><i class="fas fa-redo-alt"></i> Click here to read
+                          more</a>
+                      </div>
+                    </div>
+                    <!-- Front Side -->
+
+                    <!-- Back Side -->
+                    <div class="face back">
+                      <div class="card-body">
+                        <small>
+                          <h6 class="green-text">Details</h6>
+                        </small>
+                        <hr>
+                        <p>
+                          With proper farm culture, a typical maize farm yields 5 to 10 bags (100 kg per bag) of maize
+                          per
+                          acre.
+                          Undoubtedly, maize is the most important and most consumed cereal in Ghana and most African
+                          countries.
+                          Because of this, maize is grown throughout Ghana and other West African countries. Maize is
+                          not only
+                          the most widely grown cereal crop in Ghana but also plays a significant role in ensuring food
+                          security
+                          in the country. It is estimated that between 40 and 50% of the total food energy consumed by
+                          Ghanaians
+                          comes from maize and maize products. Additionally, maize is also used to feed poultry and
+                          other
+                          livestock. Sponsoring maize can yield a returns between 10% - 20%
+                        </p>
+                        <br>
+                        <a class="rotate-btn" data-card="card-1"><i class="fas fa-undo"></i> Click here to go back</a>
+                      </div>
+                    </div>
+                    <!-- Back Side -->
+
+                  </div>
+                </div>
+              </small>
+            </div>
+          </div>
+          <!-- Grid row -->
+        </div>
+        <!-- Panel 1 -->
+
+        <!-- Panel 2 -->
+        <div class="tab-pane fade" id="panel37" role="tabpanel">
+          <!-- Grid row -->
+          <div class="row mb-3">
+           
+            <div class="col-lg-4 col-md-6 mb-4 d-flex flex-column">
+              <!-- Card -->
+              <div class="card card-ecommerce">
+                <div class="view overlay">
+                  <img
+                    src="img/dry-white-long-rice-basmati-wooden-bowl-burlap-sack-with-wooden-scoop-isolated-white-background_434420-1799.webp"
+                    class="img-fluid" alt="sample image" />
+                  <a>
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title mb-1">
+                    <strong><a class="dark-grey-text">Rice Farm</a></strong>
+                  </h5>
+                  <span class="badge badge-danger mb-2">Available In 6months</span>
+                  <span class="badge badge-success mb-2">Located In upper west</span>
+
+                  <ul class="rating">
+                    <li>
+                      <i class="fas fa-star yellow-text"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star yellow-text"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star yellow-text"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star yellow-text"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star grey-text"></i>
+                    </li>
+                  </ul>
+
+                  <div class="card-footer pb-0">
+                    <div class="row mb-0">
+                      <span class="float-left">
+                        <strong>1439$</strong>
+                      </span>
+                      <span class="float-right">
+                        <a data-toggle="tooltip" data-placement="top" title="Add to Cart">
+                          <i class="fas fa-shopping-cart ml-3"></i>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                  <br />
+                  <br />
+                  <div class="text-center">
+                    <button type="button" class="btn btn-rounded">
+                      <small>Join Waiting List</small>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Card -->
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-lg-4 col-md-6 mb-4 d-flex flex-column">
+              <!-- Card -->
+              <div class="card card-ecommerce">
+                <br />
+                <br />
+                <div class="view overlay">
+                  <img src="img/fresh-peanuts_144627-16149.webp" class="img-fluid" alt="sample image" />
+                  <a>
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+
+                <div class="card-body">
+                  <br />
+                  <br />
+                  <h5 class="card-title mb-1">
+                    <strong><a class="dark-grey-text">Groundnut Trade</a></strong>
+                  </h5>
+                  <span class="badge badge-danger mb-2">Available In 7months</span>
+                  <span class="badge badge-success mb-2 ml-2">Located In Kumasi</span>
+                  <ul class="rating">
+                    <li>
+                      <i class="fas fa-star yellow-text"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star yellow-text"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star yellow-text"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star yellow-text"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star yellow-text"></i>
+                    </li>
+                  </ul>
+
+                  <div class="card-footer pb-0">
+                    <div class="row mb-0">
+                      <h5 class="mb-0 pb-0 mt-1 font-weight-bold">
+                        <span class="red-text">
+                          <strong>$1199</strong>
+                        </span>
+                        <span class="grey-text">
+                          <small>
+                            <s>$1520</s>
+                          </small>
+                        </span>
+                      </h5>
+                      <span class="float-right">
+                        <a data-toggle="tooltip" data-placement="top" title="Add to Cart">
+                          <i class="fas fa-shopping-cart ml-3"></i>
+                        </a>
+                      </span>
+                    </div>
+                    <br />
+                    <div class="text-center">
+                      <button type="button" class="btn btn-rounded">
+                        <small>Join Waiting List</small>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card -->
+            </div>
+            <!-- Grid column -->
+
+            <div class="col-lg-4 col-md-6 mb-4 d-flex flex-column">
+              <!-- Card -->
+              <!-- Rotating card -->
+              <div class="card-wrapper">
+                <div id="card-1" class="card card-rotating text-center">
+
+                  <!-- Front Side -->
+                  <div class="face front">
+
+                    <!-- Image-->
+                    <div class="card-up">
+                      <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/photo7.webp"
+                        alt="Image with a photo of clouds.">
+                    </div>
+
+                    <!-- Avatar -->
+                    <div class="avatar mx-auto white"><img
+                        src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).webp" class="rounded-circle"
+                        alt="Sample avatar image.">
+                    </div>
+
+                    <!-- Content -->
+                    <div class="card-body">
+                      <h4 class="font-weight-bold mb-3">Marie Johnson</h4>
+                      <p class="font-weight-bold blue-text">Web developer</p>
+                      <!-- Triggering button -->
+                      <a class="rotate-btn" data-card="card-1"><i class="fas fa-redo-alt"></i> Click here to rotate</a>
+                    </div>
+                  </div>
+                  <!-- Front Side -->
+
+                  <!-- Back Side -->
+                  <div class="face back">
+                    <div class="card-body">
+
+                      <!-- Content -->
+                      <h4 class="font-weight-bold mb-0">About me</h4>
+                      <hr>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat tenetur odio suscipit non
+                        commodi
+                        vel
+                        eius veniam maxime?
+                        <hr>
+                        <!-- Social Icons -->
+                      <ul class="list-inline py-2">
+                        <li class="list-inline-item"><a class="p-2 fa-lg fb-ic"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a class="p-2 fa-lg tw-ic"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a class="p-2 fa-lg gplus-ic"><i
+                              class="fab fa-google-plus-g"></i></a></li>
+                        <li class="list-inline-item"><a class="p-2 fa-lg li-ic"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                      </ul>
+                      <!-- Triggering button -->
+                      <a class="rotate-btn" data-card="card-1"><i class="fas fa-undo"></i> Click here to rotate back</a>
+
+                    </div>
+                  </div>
+                  <!-- Back Side -->
+
+                </div>
+              </div>
+              <!-- Rotating card -->
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+        <!-- Panel 2 -->
+
+        <!-- Panel 3 -->
+        <div class="tab-pane fade" id="panel38" role="tabpanel">
+          <!-- Grid row -->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+              <!-- Card -->
+              <div class="card card-ecommerce">
+                <h3>coming soon</h3>
+              </div>
+              <!-- Card -->
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+        <!-- Panel 3 -->
+      </div>
+      <!-- Tab panels -->
+    </section>
+    <!-- Section: Block Content -->
+  </div>
+
+  <br>
+<br>
+<br>
+<br>
+
+
+  <!-- Footer Elements -->
+  <footer class="page-footer font-small green darken-3">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2022 Copyright:
+      <a href=""> Agrivest Africa.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+
+
+
+
+  <!-- jquery -->
+  <script src="user dashboard/assets/js/script.js"></script>
+  <script type="text/javascript"
+    src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/js/bundles/4.20.0/compiled.min.js"></script>
+
+  <script type="text/javascript"
+    src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/js/dist/search-v4/search.min.js"></script>
+  <script src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/js/dist/main.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="user dashboard/assets/js/script.js"></script>
+
+</body>
+
+</html>
