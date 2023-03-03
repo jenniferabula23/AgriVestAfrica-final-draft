@@ -1,31 +1,32 @@
 
+html,
+body,
+header,
+.view {
+  height: 80%;
+}
+
+
+@media (max-width: 740px) {
+
   html,
   body,
   header,
   .view {
-    height: 80%;
+    height: 100px;
   }
+}
 
-  
-  @media (max-width: 740px) {
+@media (min-width: 800px) and (max-width: 850px) {
 
-    html,
-    body,
-    header,
-    .view {
-      height: 400px;
-    }
+  html,
+  body,
+  header,
+  .view {
+    height: 100px;
   }
+}
 
-  @media (min-width: 800px) and (max-width: 850px) {
-
-    html,
-    body,
-    header,
-    .view {
-      height: 500px;
-    }
-  }
 
   .btn .fa {
     margin-left: 3px;
@@ -81,7 +82,7 @@
   }
  
     
-  .box2 {
-    margin-bottom: 7 rem;
-    }
   
+  .box2{
+    margin-bottom: 2 rem;
+  }
