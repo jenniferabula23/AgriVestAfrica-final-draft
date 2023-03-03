@@ -23,18 +23,93 @@
   <meta name="subject" content="Agrivest Africa">
   <meta name="copyright" content="Agrivest Africa">
   <link rel="shortcut icon" href="img/cocoa-pods-with-cocoa-leaf-white_41471-6709.webp" />
-  <link rel="stylesheet" href="css/index.css">
-<head>
-  <style>
-    .card-img-top{
-      height: 250px;
-      width: 300px ;
-    }
-    box1{
-      margin-bottom: 2rem;
-    }
-  </style>
-</head>
+
+  <head>
+    <style>
+      html,
+      body,
+      header,
+      .view {
+        height: 90%;
+
+      }
+
+
+      @media (max-width: 740px) {
+
+        html,
+        body,
+        header,
+        .view {
+          height: 500px;
+        }
+      }
+
+      @media (min-width: 800px) and (max-width: 850px) {
+
+        html,
+        body,
+        header,
+        .view {
+          height: 500px;
+        }
+      }
+
+      .btn .fa {
+        margin-left: 3px;
+      }
+
+      .top-nav-collapse {
+        background: -moz-linear-gradient(45deg, rgba(4, 2, 17, 0.7), rgba(231, 216, 9, 0.7) 100%);
+        background: -webkit-linear-gradient(45deg, rgba(39, 126, 4, 0.7), rgba(168, 117, 7, 0.7) 100%);
+        background: -webkit-gradient(linear, 45deg, from(rgba(2, 168, 10, 0.7)), to(rgba(29, 210, 177, 0.7)));
+        background: -o-linear-gradient(45deg, rgba(26, 77, 6, 0.7), rgba(148, 110, 7, 0.7) 100%);
+        background: linear-gradient(to 45deg, rgba(4, 68, 4, 0.7), rgba(27, 194, 12, 0.7) 100%);
+
+      }
+
+      .navbar:not(.top-nav-collapse) {
+        background: transparent !important;
+      }
+
+      @media (max-width: 991px) {
+        .navbar:not(.top-nav-collapse) {
+          background: green !important;
+        }
+      }
+
+      .btn-white {
+        color: black !important;
+      }
+
+
+
+      .rgba-gradient {
+        background: -moz-linear-gradient(45deg, rgba(42, 155, 7, 0.7), rgba(2, 141, 13, 0.7) 100%);
+        background: -webkit-linear-gradient(45deg, rgba(23, 100, 4, 0.7), rgba(1, 78, 5, 0.7) 100%);
+        background: -webkit-gradient(linear, 45deg, from(rgba(24, 122, 5, 0.7)), to(rgba(32, 167, 149, 0.2)));
+        background: -o-linear-gradient(90deg, rgba(38, 99, 3, 0.7), rgba(2, 100, 10, 0.7) 100%);
+        background: linear-gradient(to 45deg, rgba(10, 54, 2, 0.7), rgba(6, 122, 16, 0.7) 100%);
+      }
+
+      .rgba-gradient1 {
+        background: -moz-linear-gradient(45deg, rgba(57, 221, 16, 0.7), rgba(19, 77, 5, 0.7) 60%);
+        background: -webkit-linear-gradient(45deg, rgba(14, 233, 25, 0.7), rgba(3, 46, 3, 0.7) 40%);
+        background: -webkit-gradient(linear, 45deg, from(rgba(7, 226, 36, 0.7)), to(rgba(103, 224, 87, 0.5)));
+        background: -o-linear-gradient(45deg, rgba(60, 230, 8, 0.2), rgba(20, 85, 3, 0.7) 50%);
+        background: linear-gradient(to 45deg, rgba(57, 238, 11, 0.7), rgba(9, 61, 4, 0.7) 20%);
+      }
+
+      .card-img-top {
+        height: 250px;
+        width: 300px;
+      }
+
+      .box1 {
+        margin-bottom: 2rem;
+      }
+    </style>
+  </head>
 
   <header>
     <!--Navbar-->
@@ -89,7 +164,7 @@
                 <a class="dropdown-item" href="investors.html">Investors</a>
               </div>
             </li>
-           
+
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">Media</a>
@@ -123,11 +198,6 @@
       <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
         <!-- Content -->
         <div class="container">
-          <br>
-          <br>
-          <br>
-          <br>
-       
           <!--Grid row-->
           <div class="row">
             <!--Grid column-->
@@ -136,8 +206,8 @@
               </h1>
               <hr class="hr-light">
               <h6 class="mb-4">
-                Agrivest Africa is an equity crowd-funding platform focused on connecting agtivestors and small to
-                medium scale farmers, farms and commodities in Africa. Our goal is to maximize our agtivestors returns
+                Agrivest Africa is an equity crowd-funding platform focused on connecting agrivestors and small to
+                medium scale farmers, farms and commodities in Africa. Our goal is to maximize our agrivestors returns
                 and continue to sustainably improve the yield of our farmers and aggregators
               </h6>
               <h5><b>Join As:</b></h5>
@@ -149,8 +219,6 @@
                 An Aggregator</a>
             </div>
           </div>
-          <br>
-          <br>
         </div>
         <!--Grid row-->
       </div>
@@ -200,10 +268,13 @@
               <img class="card-img-top" src="img/corn-isolated_93675-33173.webp" alt="Card image cap">
               <div class="card-body">
                 <br>
-                <a class="btn rgba-gradient1 btn-rounded btn-sm animated bounce white-text" href="farm.html">Available</a>
+                <a class="btn rgba-gradient1 btn-rounded btn-sm animated bounce white-text"
+                  href="farm.html">Available</a>
                 <hr>
                 <br>
-                <h5 class="card-title font-weight-bold mb-4 green-text ">Maize <br><center><span class="badge badge-success mb-2">(Zea Mays)</span></center></h5>
+                <h5 class="card-title font-weight-bold mb-4 green-text ">Maize <br>
+                  <center><span class="badge badge-success mb-2">(Zea Mays)</span></center>
+                </h5>
                 <p class="card-text">Maize is the number one crop in terms of area planted and accounts for 50-60% of
                   total cereal production, while also being the second largest commodity crop in the country after
                   cocoa.</p>
@@ -211,78 +282,84 @@
             </div>
           </div>
           <div class="col-md-4  overlay zoom"">
-            <div class="card mb-2">
-              <img class="card-img-top" src="img/organic_soya_beans_a7eb8ebb.jpg" alt="Card image cap" width="310px"
-                height="300px">
-              <div class="card-body">
-                <br>
-                <a class="btn rgba-gradient1 btn-rounded btn-sm animated bounce white-text" href="farm.html">Available</a>
-                <hr>
-                <h5 class="card-title font-weight-bold mb-4 green-text">Soyabean <br> <span class="badge badge-success mb-2">(Glycine Max)</span></h5>
-                <p class="card-text">Africa exports about 20,000 tons annually nad can be used in Poultry and livestock
-                  feeding which makes up 97 percent of soybean meal used.</p>
-              </div>
+            <div class=" card mb-2">
+            <img class="card-img-top" src="img/organic_soya_beans_a7eb8ebb.jpg" alt="Card image cap" width="310px"
+              height="300px">
+            <div class="card-body">
               <br>
-              <br>
+              <a class="btn rgba-gradient1 btn-rounded btn-sm animated bounce white-text" href="farm.html">Available</a>
+              <hr>
+              <h5 class="card-title font-weight-bold mb-4 green-text">Soyabean <br> <span
+                  class="badge badge-success mb-2">(Glycine Max)</span></h5>
+              <p class="card-text">Africa exports about 20,000 tons annually nad can be used in Poultry and livestock
+                feeding which makes up 97 percent of soybean meal used.</p>
             </div>
-          </div>
-          <div class="col-md-4  overlay zoom"">
-            <div class="card mb-2">
-              <br>
-              <img class="card-img-top" src="img/fresh-peanuts_144627-16149.webp" alt="Card image cap" width="280px"
-              height="250px">
-              <div class="card-body">
-                <a class="btn rgba-gradient1 btn-rounded btn-sm white-text" href="farm.html">Available</a>
-                <hr>
-                <h5 class="card-title font-weight-bold mb-4 green-text ">Groundnut <br>  <span class="badge badge-success mb-2">(Arachis Hypogaea)</span>  </h5>
-                <p class="card-text">Groundnut seed can be consumed raw (non-heated), boiled, and roasted and also used
-                  to make confections and its flour to make baked products. The groundnut shells are used for making
-                  particle boards or used as fuel or filler in fertilizer and feed industry.</p>
-              </div>
-            </div>
+            <br>
+            <br>
           </div>
         </div>
-        <!--/.First slide-->
-
-        <!--Second slide-->
-        <div class="carousel-item">
-         
-          <div class="col-md-4  overlay zoom"">
-            <div class="card mb-2">
-              <img class="card-img-top" src="img/istockphoto-537642468-612x612.jpg" alt="Card image cap" width="320px"
-                height="320px">
-              <div class="card-body">
-                <center><a class="btn rgba-gradient1 btn-rounded btn-sm white-text" href="farm.html">Available</a></center>
-                <hr>
-               <center> <h5 class="card-title font-weight-bold mb-4 green-text ">Beans/Cowpea<br> <span class="badge badge-success mb-2">(Vigna Unguiculata)</span></h5> </center>
-                <p class="card-text">is now widely grown across Africa, mainly by women farmers. As a legume, beans
-                  improve soil fertility as well as household food supplies and incomes.</p>
-              </div>
-              <br>
-              <br>
-            </div>
+        <div class="col-md-4  overlay zoom"">
+            <div class=" card mb-2">
+          <br>
+          <img class="card-img-top" src="img/fresh-peanuts_144627-16149.webp" alt="Card image cap" width="280px"
+            height="250px">
+          <div class="card-body">
+            <a class="btn rgba-gradient1 btn-rounded btn-sm white-text" href="farm.html">Available</a>
+            <hr>
+            <h5 class="card-title font-weight-bold mb-4 green-text ">Groundnut <br> <span
+                class="badge badge-success mb-2">(Arachis Hypogaea)</span> </h5>
+            <p class="card-text">Groundnut seed can be consumed raw (non-heated), boiled, and roasted and also used
+              to make confections and its flour to make baked products. The groundnut shells are used for making
+              particle boards or used as fuel or filler in fertilizer and feed industry.</p>
           </div>
-
-          <div class="col-md-4 overlay zoom text-center">
-            <div class="card mb-2">
-              <img class="card-img-top"
-                src="img/dry-white-long-rice-basmati-wooden-bowl-burlap-sack-with-wooden-scoop-isolated-white-background_434420-1799.webp"
-                alt="Card image cap">
-              <div class="card-body">
-                <a class="btn btn-danger btn-rounded btn-sm">Sold Out</a>
-                <hr>
-                <h5 class="card-title font-weight-bold mb-4 green-text ">Rice<br> <span class="badge badge-success mb-2"> (Oryza Sativa)</span></h5> 
-                <p class="card-text">Rice prominently comes under grass species Oryza Sativa. It is a major staple food
-                  in Asian countries. The Global Rice Trade Analysis report is segmented by Geography (North America,
-                  Europe, Asia-Pacific, South America, and Africa). </p>
-              </div>
-            </div>
-          </div>
-
         </div>
-        <!--/.Second slide-->
       </div>
-      <!--/.Slides-->
+    </div>
+    <!--/.First slide-->
+
+    <!--Second slide-->
+    <div class="carousel-item">
+
+      <div class="col-md-4  overlay zoom"">
+            <div class=" card mb-2">
+        <img class="card-img-top" src="img/istockphoto-537642468-612x612.jpg" alt="Card image cap" width="320px"
+          height="320px">
+        <div class="card-body">
+          <center><a class="btn rgba-gradient1 btn-rounded btn-sm white-text" href="farm.html">Available</a></center>
+          <hr>
+          <center>
+            <h5 class="card-title font-weight-bold mb-4 green-text ">Beans/Cowpea<br> <span
+                class="badge badge-success mb-2">(Vigna Unguiculata)</span></h5>
+          </center>
+          <p class="card-text">is now widely grown across Africa, mainly by women farmers. As a legume, beans
+            improve soil fertility as well as household food supplies and incomes.</p>
+        </div>
+        <br>
+        <br>
+      </div>
+    </div>
+
+    <div class="col-md-4 overlay zoom text-center">
+      <div class="card mb-2">
+        <img class="card-img-top"
+          src="img/dry-white-long-rice-basmati-wooden-bowl-burlap-sack-with-wooden-scoop-isolated-white-background_434420-1799.webp"
+          alt="Card image cap">
+        <div class="card-body">
+          <a class="btn btn-danger btn-rounded btn-sm">Sold Out</a>
+          <hr>
+          <h5 class="card-title font-weight-bold mb-4 green-text ">Rice<br> <span class="badge badge-success mb-2">
+              (Oryza Sativa)</span></h5>
+          <p class="card-text">Rice prominently comes under grass species Oryza Sativa. It is a major staple food
+            in Asian countries. The Global Rice Trade Analysis report is segmented by Geography (North America,
+            Europe, Asia-Pacific, South America, and Africa). </p>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <!--/.Second slide-->
+    </div>
+    <!--/.Slides-->
 
     </div>
     <!--/.Carousel Wrapper-->
@@ -306,33 +383,35 @@
             <div class="row">
               <div class="col-md-4 overlay zoom ">
                 <div class="card mb-2">
-                 <a href="trade.html">
-                  <img class="card-img-top" src="img/corn-isolated_93675-33173.webp" alt="Card image cap" height="250px" width="100%">
-                 </a>
+                  <a href="trade.html">
+                    <img class="card-img-top" src="img/corn-isolated_93675-33173.webp" alt="Card image cap"
+                      height="250px" width="100%">
+                  </a>
                 </div>
               </div>
               <div class="col-md-4 overlay zoom  text-center">
                 <div class="card mb-2 ">
-                 <a href="trade checkout.html">
-                  <img class="card-img-top"
-                  src="img/cocoa-pods-cocoa-beans-cacao-powder-with-leaves-isolated-white-background_38145-733.webp"
-                  alt="Card image cap" height="250px" width="100%">
-                 </a>
+                  <a href="trade checkout.html">
+                    <img class="card-img-top"
+                      src="img/cocoa-pods-cocoa-beans-cacao-powder-with-leaves-isolated-white-background_38145-733.webp"
+                      alt="Card image cap" height="250px" width="100%">
+                  </a>
                 </div>
               </div>
 
               <div class="col-md-4 overlay zoom text-center">
                 <div class="card mb-2">
-                <a href="trade.html">
-                  <img class="card-img-top" src="img/organic_soya_beans_a7eb8ebb.jpg" alt="Card image cap"  height="250px" width="100%">
-                </a>
+                  <a href="trade.html">
+                    <img class="card-img-top" src="img/organic_soya_beans_a7eb8ebb.jpg" alt="Card image cap"
+                      height="250px" width="100%">
+                  </a>
                 </div>
               </div>
             </div>
           </div>
           <!--/.First slide-->
 
-       
+
 
 
         </div>
@@ -392,37 +471,37 @@
           <div class="carousel-item active">
             <!--Grid row-->
             <div class="row box1">
-                 <!--Second column-->
-                 <div class="col-lg-4 col-md-4 d-flex align-items-center justify-content-center">
-                  <img src="img/GAIPLogo.png" class="img-fluid px-4" alt="Logo">
-                </div>
-                <!--/Second column-->
-              <br>
-              <br>  
-             <!--/Second column-->
               <!--Second column-->
-              <div class="col-lg-4 col-md-4 d-flex align-items-center justify-content-center">
+              <div class="col-lg-4 box1 col-md-4 d-flex align-items-center justify-content-center z-depth-1">
+                <img src="img/GAIPLogo.png" class="img-fluid px-4" alt="Logo">
+              </div>
+              <!--/Second column-->
+              <br>
+              <br>
+              <!--/Second column-->
+              <!--Second column-->
+              <div class="col-lg-4 box1 col-md-4 d-flex align-items-center justify-content-center z-depth-1 ">
                 <img src="img/download (1).png" class="img-fluid px-4" alt="Logo">
               </div>
               <!--/Second column-->
-           <br>
-           <br>
-             <!--Second column-->
-             <div class="col-lg-4 col-md-4 d-flex align-items-center justify-content-center">
-              <img src="img/WhatsApp Image 2023-01-14 at 6.33-PhotoRoom (1).png" class="img-fluid px-4" alt="Logo">
-            </div>
-            <!--/Second column-->
-           
-            
-          </div>
-          <!-- First slide -->
+              <br>
+              <br>
+              <!--Second column-->
+              <div class="col-lg-4 box1 col-md-4 d-flex align-items-center justify-content-center z-depth-1">
+                <img src="img/WhatsApp Image 2023-01-14 at 6.33-PhotoRoom (1).png" class="img-fluid px-4" alt="Logo">
+              </div>
+              <!--/Second column-->
 
+
+            </div>
+            <!-- First slide -->
+
+
+          </div>
 
         </div>
-
+        <!-- Logo carousel -->
       </div>
-      <!-- Logo carousel -->
-    </div>
 
     </section>
 
@@ -526,7 +605,7 @@
       <!-- Footer Links -->
 
       <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">© 2023 Copyright:
+      <div class="footer-copyright text-center py-3 fixed-bottom">© 2023 Copyright:
         <a href="">AgriVest Africa</a>
       </div>
       <!-- Copyright -->
