@@ -1,394 +1,360 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="theme-color" content="#33b5e5">
-
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrivest Africa</title>
+    <!-- font awesome icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet"
         href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/compiled-4.20.0.min.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta charset="utf-8">
     <meta name="description" content="
-    Sign Up with AgriVest Africa for the opportunity to invest in new farms, manage and monitor old farms. " />
-  <meta name="keywords" content=" AgriVest Africa, Grow, growth, farm, sponsorship, sponsor, sponsoring, invest, investing, farming,
-    crop, africa, ghana, nigeria, india, agriculture, green technology " />
-  <meta name="subject" content="Agrivest Africa">
-  <meta name="copyright" content="Agrivest Africa">
-
+  Sign Up with Grow For Me for the opportunity to invest in new farms, manage and monitor old farms. " />
+    <meta name="keywords" content=" Grow For Me, Grow, growth, farm, sponsorship, sponsor, sponsoring, invest, investing, farming,
+  crop, africa, ghana, nigeria, india, agriculture, green technology " />
+    <meta name="subject" content="AgriWeb">
+    <meta name="copyright" content="Agriweb">
     <link rel="shortcut icon" href="img/cocoa-pods-with-cocoa-leaf-white_41471-6709.webp" />
 
-    <link rel="canonical" href="https://mdbootstrap.com/docs/b4/jquery/components/demo/" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="user dashboard/assets/css/main.css">
 
 
-    <script data-cfasync="false">
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    '//www.googletagmanager.com/gtm.' + 'js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-W7MBMN');
-    </script>
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
 
+        .imagePreview {
+            width: 100%;
+            height: 180px;
+            background-position: center center;
+            background: url(http://cliquecities.com/assets/no-image-e3699ae23f866f6cbdf8ba2443ee5c4e.jpg);
+            background-color: #fff;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: inline-block;
+            box-shadow: 0px -3px 6px 2px rgba(0, 0, 0, 0.2);
+        }
 
+        .btn-primary {
+            display: block;
+            border-radius: 0px;
+            box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 0.2);
+            margin-top: -5px;
+        }
 
-  
-  <style>
+        .imgUp {
+            margin-bottom: 15px;
+        }
 
-    html,
-    body,
-    header,
-    .view {
-      height: 80%;
-    }
-  
-    @media (max-width: 740px) {
-      html,
-      body,
-      header,
-      .view {
-        height: 400px;
-      }
-    }
-    @media (min-width: 800px) and (max-width: 850px) {
-      html,
-      body,
-      header,
-      .view {
-        height: 500px;
-      }
-    }
-  
-    .btn .fa {
-      margin-left: 3px;
-    }
-  
-    .top-nav-collapse {
-      background: -moz-linear-gradient(45deg, rgba(4, 2, 17, 0.7), rgba(13, 211, 13, 0.7) 100%);
-      background: -webkit-linear-gradient(45deg, rgba(39, 126, 4, 0.7), rgba(11, 233, 66, 0.7) 100%);
-      background: -webkit-gradient(linear, 45deg, from(rgba(2, 168, 10, 0.7)), to(rgba(29, 210, 177, 0.7)));
-      background: -o-linear-gradient(45deg, rgba(26, 77, 6, 0.7), rgba(12, 228, 48, 0.7) 100%);
-      background: linear-gradient(to 45deg, rgba(4, 68, 4, 0.7), rgba(27, 194, 12, 0.7) 100%);
+        .del {
+            position: absolute;
+            top: 0px;
+            right: 15px;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            background-color: rgba(255, 255, 255, 0.6);
+            cursor: pointer;
+        }
 
-    }
-  
-    .navbar:not(.top-nav-collapse) {
-      background: transparent !important;
-    }
-  
-    @media (max-width: 991px) {
-     .navbar:not(.top-nav-collapse) {
-      background: #06aa14 !important;
-     }
-    }
-  
-    .btn-white {
-      color: black !important;
-    }
-  
-   
-  
-    .rgba-gradient {
-        background: -moz-linear-gradient(45deg, rgba(42, 155, 7, 0.7), rgba(29, 210, 177, 0.7) 100%);
-      background: -webkit-linear-gradient(45deg, rgba(23, 100, 4, 0.7), rgba(29, 210, 177, 0.7) 100%);
-      background: -webkit-gradient(linear, 45deg, from(rgba(24, 122, 5, 0.7)), to(rgba(29, 210, 177, 0.7)));
-      background: -o-linear-gradient(45deg, rgba(38, 99, 3, 0.7), rgba(29, 210, 177, 0.7) 100%);
-      background: linear-gradient(to 45deg, rgba(10, 54, 2, 0.7), rgba(29, 210, 177, 0.7) 100%);
-    }
-
-    .rgba-gradient1 {
-      background: -moz-linear-gradient(45deg, rgba(4, 2, 17, 0.7), rgba(29, 210, 177, 0.7) 60%);
-      background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 40%);
-      background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.7)), to(rgba(29, 210, 177, 0.5)));
-      background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.2), rgba(29, 210, 177, 0.7) 50%);
-      background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 20%);
-    }
-  
-    .rgba-gradient2 {
-      background: -moz-linear-gradient(45deg, rgba(63, 1, 71, 0.1), rgba(29, 210, 177, 0.3) 60%);
-      background: -webkit-linear-gradient(45deg, rgba(230, 11, 200, 0.1), rgba(29, 210, 177, 0.3) 40%);
-      background: -webkit-gradient(linear, 45deg, from(rgba(212, 19, 203, 0.1)), to(rgba(29, 210, 177, 0.3)));
-      background: -o-linear-gradient(45deg, rgba(209, 10, 166, 0.1), rgba(189, 29, 210, 0.2) 50%);
-      background: linear-gradient(to 45deg, rgba(78, 4, 107, 0.2), rgba(180, 16, 158, 0.2) 20%);
-    }
-    
-  </style>
-
-    <header>
-       <!--Navbar-->
-       <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar justify-content-center">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <strong>Agrivest Africa</strong>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
-            aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="farm.html">Farm</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="trade.html">Trade</a>
-              </li>
-             
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">About</a>
-                <div class="dropdown-menu dropdown-success" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="about.html">About Us</a>
-                  <a class="dropdown-item" href="traction.html">Our Traction</a>
-                  <a class="dropdown-item" href="meet team.html">Team</a>
-                  <a class="dropdown-item" href="board.html">Our Board</a>
-                  <a class="dropdown-item" href="Advisores.html">Our Advisors</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">How It Works</a>
-                <div class="dropdown-menu dropdown-success" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="what we do.html">Get Started</a>
-                  <a class="dropdown-item" href="how to .html">Videos</a>
-                  <a class="dropdown-item" href="faq.html">FAQ</a>
-                  <a class="dropdown-item" href="webinar.html">Webinar Registration</a>
-                  <a class="dropdown-item" href="referral.html">Referrals</a>
-                  <a class="dropdown-item" href="img/Agrivest africa.pdf">Offline Guide</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">Investors</a>
-                <div class="dropdown-menu dropdown-success" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="investors.html">Investors</a>
-                </div>
-              </li>
-             
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">Media</a>
-                <div class="dropdown-menu dropdown-success" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="blog.html">Blog</a>
-                  <a class="dropdown-item" href="gallery.html">Gallery</a>
-                </div>
-              </li>
-            </ul>
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="login.html">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Sign-up.html">Sign-Up</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="adminhub-master/index.html">Account</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- Full Page Intro -->
-      <div class="view" style="background-image: url('img/soybean-isolated-white-background_74190-7801.webp'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-        <!-- Mask & flexbox options-->
-        <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
-          <!-- Content -->
-          <div class="container">
-            <br>
-            <br>
-            <br>
-            <!--Grid row-->
-            <div class="row">
-              <!--Grid column-->
-              <div class="col-md-6 white-text text-center text-md-left mt-xl-5 mb-5 " >
-                <h1 class="h1-responsive font-weight-bold mt-sm-5 text-left animated tada slower">Our Testimonials</h1>
-                <hr class="hr-light">
-            </div>
-              </div>
-            
-            </div>
-            <!--Grid row-->
-          </div>
-          <!-- Content -->
-        </div>
-        <!-- Mask & flexbox options-->
-      </div>
-      <!-- Full Page Intro -->
-    </header>
-    <!-- Main navigation -->
+        .imgAdd {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #4bd7ef;
+            color: #fff;
+            box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            line-height: 30px;
+            margin-top: 0px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+    </style>
 </head>
 
+
 <body>
- <br>
- <br>
-      <div class="container mt-5">
 
+    <div class="dashboard-pg text-grey-blue">
+        <nav class="navigation-bar d-flex align-items-center">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="navigation-bar-left col-6 d-flex align-items-center">
+                        <button type="button" class="navbar-open-btn text-grey-blue me-3">
+                            <i class="fas fa-bars"></i>
+                        </button>
 
-        <!--Section: Content-->
-        <section class="text-center dark-grey-text">
-      
-          <!-- Section heading -->
-        
-      
-              <div class="wrapper-carousel-fix">
-            <!-- Carousel Wrapper -->
-            <div id="carousel-example-1" class="carousel no-flex testimonial-carousel slide carousel-fade" data-ride="carousel"
-              data-interval="false">
-              <!--Slides-->
-              <div class="carousel-inner" role="listbox">
-                <!--First slide-->
-                <div class="carousel-item active">
-                  <div class="testimonial">
-                    <!--Avatar-->
-                    <div class="avatar mx-auto mb-4">
-                      <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg" class="rounded-circle img-fluid"
-                        alt="First sample avatar image">
                     </div>
-                    <!--Content-->
-                    <p>
-                      <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
-                      eos
-                      id officiis hic tenetur quae quaerat ad velit ab. Lorem ipsum dolor sit amet, consectetur
-                      adipisicing elit. Dolore cum accusamus eveniet molestias voluptatum inventore laboriosam labore
-                      sit, aspernatur praesentium iste impedit quidem dolor veniam.
-                    </p>
-                    <h4 class="font-weight-bold">Anna Deynah</h4>
-                    <h6 class="font-weight-bold my-3">Farmer</h6>
-                    <!--Review-->
-                    <i class="fas fa-star yellow-text"> </i>
-                    <i class="fas fa-star yellow-text"> </i>
-                    <i class="fas fa-star yellow-text"> </i>
-                    <i class="fas fa-star yellow-text"> </i>
-                    <i class="fas fa-star-half-alt yellow-text"> </i>
-                  </div>
-                </div>
-                <!--First slide-->
-                <!--Second slide-->
-                <div class="carousel-item">
-                  <div class="testimonial">
-                    <!--Avatar-->
-                    <div class="avatar mx-auto mb-4">
-                      <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg" class="rounded-circle img-fluid"
-                        alt="Second sample avatar image">
+
+                    <div class="navigation-bar-right col-6 d-flex align-items-center justify-content-end">
+                        <a href="#" class="profile-btn bg-blue  btn-circle me-3">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <button type="button" class="notification-btn text-grey-blue">
+                            <i class="fa-regular fa-bell"></i>
+                        </button>
                     </div>
-                    <!--Content-->
-                    <p>
-                      <i class="fas fa-quote-left"></i> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                      odit
-                      aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
-                      porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
-                      non numquam eius modi tempora incidunt ut labore. </p>
-                    <h4 class="font-weight-bold">Maria Kate</h4>
-                    <h6 class="font-weight-bold my-3">COnsultant@meda</h6>
-                    <!--Review-->
-                    <i class="fas fa-star yellow-text"> </i>
-                    <i class="fas fa-star yellow-text"> </i>
-                    <i class="fas fa-star yellow-text"> </i>
-                    <i class="fas fa-star yellow-text"> </i>
-                    <i class="fas fa-star yellow-text"> </i>
-                  </div>
                 </div>
-                <!--Second slide-->
-                <!--Third slide-->
-                <div class="carousel-item">
-                  <div class="testimonial">
-                    <!--Avatar-->
-                    <div class="avatar mx-auto mb-4">
-                      <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="rounded-circle img-fluid"
-                        alt="Third sample avatar image">
-                    </div>
-                    <!--Content-->
-                    <p>
-                      <i class="fas fa-quote-left"></i> Duis aute irure dolor in reprehenderit in voluptate velit esse
-                      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                      culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
-                      error sit voluptatem accusantium doloremque laudantium.</p>
-                    <h4 class="font-weight-bold">John Doe</h4>
-                    <h6 class="font-weight-bold my-3">CEO @agri</h6>
-                    <!--Review-->
-                    <i class="fas fa-star yellow-text"> </i>
-                    <i class="fas fa-star yellow-text"> </i>
-                    <i class="fas fa-star yellow-text"> </i>
-                    <i class="fas fa-star yellow-text"> </i>
-                    <i class="far fa-star yellow-text"> </i>
-                  </div>
-                </div>
-                <!--Third slide-->
-              </div>
-              <!--Slides-->
-              <!--Controls-->
-              <a class="carousel-control-prev left carousel-control" href="#carousel-example-1" role="button"
-                data-slide="prev">
-                <span class="icon-prev" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next right carousel-control" href="#carousel-example-1" role="button"
-                data-slide="next">
-                <span class="icon-next" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-              <!--Controls-->
             </div>
-            <!-- Carousel Wrapper -->
+        </nav>
+
+        <div class="navigation-overlay position-fixed"></div>
+
+        <div class="navigation-sidebar">
+            <div class="navbar-sb-head d-flex justify-content-between align-items-center px-4">
+                <h3 class="font-weight-bold green-text"><a href="adminhub-master/index.html">AfriVest Africa</a></h3>
+                <button class="navbar-close-btn text-grey-blue">
+                    <i class='fas fa-arrow-left'></i>
+                </button>
+            </div>
+
+            <div class="navbar-sb-list p-4">
+                <div class="navbar-sb-item mb-5">
+                    <h5 class="text-uppercase text-grey navbar-sb-item-title fs-12 ls-1">recommended</h5>
+                    <ul class="navbar-sb-links p-0 list-unstyled">
+                        <li class="navbar-sb-link my-3">
+                            <a href="#" class="text-decoration-none d-flex align-items-center justify-content-between">
+                                <div class="text-light-blue d-flex align-items-center">
+                                    <span class="navbar-sb-icon me-3">
+                                        <i class="fas fa-award"></i>
+                                    </span>
+                                    <span class="navbar-sb-text fs-14 fw-5 text-capitalize green-text">Upgrade
+                                        account</span>
+                                </div>
+                                <span class="badge text-uppercase text-blue ">hot</span>
+                            </a>
+                        </li>
+                        <li class="navbar-sb-link my-3">
+                            <a href="#" class="text-decoration-none d-flex align-items-center justify-content-between">
+                                <div class="text-light-blue d-flex align-items-center">
+                                    <span class="navbar-sb-icon me-3">
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                    </span>
+                                    <span class="navbar-sb-text fs-14 fw-5 text-capitalize green-text">Telegram
+                                        Group</span>
+                                </div>
+                                <span class="badge text-uppercase text-blue">new</span>
+                            </a>
+                        </li>
+                        <li class="navbar-sb-link my-3">
+                            <a href="#" class="text-decoration-none d-flex align-items-center justify-content-between">
+                                <div class="text-light-blue d-flex align-items-center">
+                                    <span class="navbar-sb-icon me-3">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </span>
+                                    <span class="navbar-sb-text fs-14 fw-5 text-capitalize green-text">WhatsApp
+                                        Group</span>
+                                </div>
+                                <span class="badge text-uppercase text-blue">new</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="navbar-sb-item mb-5">
+                    <h5 class="text-uppercase text-grey navbar-sb-item-title fs-12 ls-1">priority</h5>
+                    <ul class="navbar-sb-links p-0 list-unstyled">
+                        <li class="navbar-sb-link my-3">
+                            <a href="#" class="text-decoration-none d-flex align-items-center justify-content-between">
+                                <div class="text-light-blue d-flex align-items-center">
+                                    <span class="navbar-sb-icon me-3">
+                                        <i class="fa-solid fa-gauge"></i>
+                                    </span>
+                                    <span class="navbar-sb-text fs-14 fw-5 text-capitalize green-text">Farms</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="navbar-sb-link my-3">
+                            <a href="#" class="text-decoration-none d-flex align-items-center justify-content-between">
+                                <div class="text-light-blue d-flex align-items-center">
+                                    <span class="navbar-sb-icon me-3">
+                                        <i class="fa-solid fa-spinner"></i>
+                                    </span>
+                                    <span class="navbar-sb-text fs-14 fw-5 text-capitalize green-text">Trades</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="navbar-sb-link my-3">
+                            <a href="#" class="text-decoration-none d-flex align-items-center justify-content-between">
+                                <div class="text-light-blue d-flex align-items-center">
+                                    <span class="navbar-sb-icon me-3">
+                                        <i class="fa-solid fa-clock-rotate-left"></i>
+                                    </span>
+                                    <span class="navbar-sb-text fs-14 fw-5 text-capitalize green-text">payment</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="navbar-sb-item mb-5">
+                    <h5 class="text-uppercase text-grey navbar-sb-item-title fs-12 ls-1"></h5>
+                    <ul class="navbar-sb-links p-0 list-unstyled">
+
+                        <li class="navbar-sb-link my-3">
+                            <a href="#" class="text-decoration-none d-flex align-items-center justify-content-between">
+                                <div class="text-light-blue d-flex align-items-center">
+                                    <span class="navbar-sb-icon me-3">
+                                        <i class="fa-regular fa-circle-user"></i>
+                                    </span>
+                                    <span class="navbar-sb-text fs-14 fw-5 text-capitalize green-text"><a
+                                            href="profile.html">profile</a></span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="navbar-sb-link my-3">
+                            <a href="#" class="text-decoration-none d-flex align-items-center justify-content-between">
+                                <div class="text-light-blue d-flex align-items-center">
+                                    <span class="navbar-sb-icon me-3">
+                                        <i class="fas fa-network-wired"></i>
+                                    </span>
+                                    <span class="navbar-sb-text fs-14 fw-5 text-capitalize green-text">referrals</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="navbar-sb-item mb-5">
+                    <ul class="navbar-sb-links p-0 list-unstyled">
+                        <li class="navbar-sb-link my-3">
+                            <a href="#" class="text-decoration-none d-flex align-items-center justify-content-between">
+                                <div class="text-light-blue d-flex align-items-center">
+                                    <span class="navbar-sb-icon me-3">
+                                        <i class="fas fa-lock"></i>
+                                    </span>
+                                    <span class="navbar-sb-text fs-14 fw-5 text-capitalize">logout</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <div class="container my-5 py">
+
+
+        <!--Section: Block Content-->
+        <section>
+      
+          <div class="card indigo">
+            <div class="card-body">
+      
+              <p class="h5 white-text pb-4 mb-3"><i class="fas fa-chart-pie px-2"></i>Sales Chart</p>
+      
+              <canvas id="lineChart1" class="mb-4" height="100"></canvas>
+      
+            </div>
+      
+            <div class="card-body white">
+      
+              <!--Grid row-->
+              <div class="row text-center text-muted my-2">
+      
+                  <!--Grid column-->
+                  <div class="col-md-4 mb-4 mb-md-0">
+      
+                    <span class="min-chart mt-0 mb-3" id="chart-pageviews" data-percent="86">
+                      <span class="percent"></span>
+                    </span>
+                    <p class="small mb-md-0">Mail-Orders</p>
+      
+                  </div>
+                  <!--Grid column-->
+      
+                  <!--Grid column-->
+                  <div class="col-md-4 mb-4 mb-md-0">
+      
+                        <span class="min-chart mt-0 mb-3" id="chart-sales" data-percent="54">
+                      <span class="percent"></span>
+                    </span>
+                    <p class="small mb-md-0">Online</p>
+      
+                  </div>
+                  <!--Grid column-->
+      
+                  <!--Grid column-->
+                  <div class="col-md-4 mb-0">
+      
+                      <span class="min-chart mt-0 mb-3" id="chart-downloads" data-percent="72">
+                      <span class="percent"></span>
+                    </span>
+                    <p class="small mb-0">In-Store</p>
+      
+                  </div>
+                  <!--Grid column-->
+      
+                </div>
+                <!--Grid row-->
+      
+            </div>
           </div>
       
+      
         </section>
-        <!--Section: Content-->
+        <!--Section: Block Content-->
       
       
       </div>
-<br>
-<br>
-<br>
-<div class="card card-image" style="background-image: url(img/dry-white-long-rice-basmati-wooden-bowl-burlap-sack-with-wooden-scoop-isolated-white-background_434420-1799.webp);" >
-    <div class="text-white text-center rgba-gradient py-5 px-4">
-     <div class="py-5">
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+    <!-- Footer Elements -->
+    <footer class="page-footer font-small green darken-3">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2022 Copyright:
+            <a href=""> Agrivest Africa.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="user dashboard/assets/js/script.js"></script>
     
-       <!-- Content -->
-       <h4 class="card-title font-weight-bold mb-4  ">Join Agrivest Africa</h4>
-       <p class="mb-4 pb-2 px-md-5 mx-md-5">Agrivest Africa is a farmer-owned and equity crowdfunding platform focused on bridging the
-        gap between investors and agri-value chain. Our goal is to maximize the investors returns and help
-        farmers get good returns while lowering risk. </p>
-        <a class="btn btn-outline-white btn-rounded animated rotateIn slower" href="Sign-up.html">
-          An Agrivestor</a>
-        <a class="btn btn-success btn-rounded animated rotateIn slower" href="sign-up farmer.html">
-          A Farmer</a>
-        <a class="btn btn-outline-white btn-rounded animated rotateIn slower" href="sign-up offtaker.html">
-          An Aggregator</a>
-     </div>
-    </div>
-    </div>
-<!-- Footer Elements -->
-<footer class="page-footer font-small green darken-3" >
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2022 Copyright:
-  <a href=""> Agrivest Africa.com</a>
-  </div>
-  <!-- Copyright -->
-
-
-
-
-    <script type="text/javascript"
-        src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/js/bundles/4.20.0/compiled.min.js"></script>
-
-
-    <script type="text/javascript"
-        src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/js/dist/search-v4/search.min.js"></script>
-    <script src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/js/dist/main.min.js"></script>
-
-
 
 </body>
 
