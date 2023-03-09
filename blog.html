@@ -13,15 +13,20 @@
   <link rel="stylesheet"
     href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/compiled-4.20.0.min.css">
 
-  <meta charset="utf-8">
-  <meta name="description" content="
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet"
+      href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/compiled-4.20.0.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta charset="utf-8">
+    <meta name="description" content="
     Sign Up with Agrivest Africa for the opportunity to invest in new farms, manage and monitor old farms. " />
-  <meta name="keywords" content=" Agrivest Africa, Grow, growth, farm, sponsorship, sponsor, sponsoring, invest, investing, farming,
+    <meta name="keywords" content=" Agrivest Africa, growth, farm, sponsorship, sponsor, sponsoring, invest, investing, farming,
     crop, africa, ghana, nigeria, india, agriculture, green technology " />
-  <meta name="subject" content="Agrivest Africa">
-  <meta name="copyright" content="Agrivest Africa">
-  <link rel="shortcut icon" href="img/cocoa-pods-with-cocoa-leaf-white_41471-6709.webp" />
-  <link rel="canonical" href="https://mdbootstrap.com/docs/b4/jquery/components/demo/" />
+    <meta name="subject" content="Agrivest Africa">
+    <meta name="copyright" content="Agrivest Africa">
+    <link rel="shortcut icon" href="img/cocoa-pods-with-cocoa-leaf-white_41471-6709.webp" />
+  
   <link rel="stylesheet" href="css/gallery.css">
 
   <style>
@@ -545,18 +550,34 @@
     </div>
     <!-- Copyright -->
 
-
-
-
-    <script type="text/javascript"
-      src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/js/bundles/4.20.0/compiled.min.js"></script>
-
+    
 
     <script type="text/javascript"
-      src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/js/dist/search-v4/search.min.js"></script>
-    <script src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/js/dist/main.min.js"></script>
+    src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/js/bundles/4.20.0/compiled.min.js"></script>
 
 
+  <script type="text/javascript"
+    src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/js/dist/search-v4/search.min.js"></script>
+  <script src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/js/dist/main.min.js"></script>
+
+  <script>
+
+    $('.carousel.carousel-multi-item.v-2 .carousel-item').each(function () {
+      var next = $(this).next();
+      if (!next.length) {
+        next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+
+      for (var i = 0; i < 4; i++) {
+        next = next.next();
+        if (!next.length) {
+          next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+      }
+    });
+  </script>
 
 </body>
 
